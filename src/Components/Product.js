@@ -1,6 +1,6 @@
 const Product = ({ product, addToCart,formatPrice }) => {
   return (
-    <div>
+    <div className="Product">
       <h3>{product.name}</h3>
       <p>Price: {formatPrice(product.price)} </p>
       <button onClick={() => addToCart(product)}>Add To Cart</button>

@@ -1,1 +1,32 @@
+.App{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.Products{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
 
+.Product{
+    display: flex;
+    flex-direction: column;
+}
+
+.Product img {
+    width: 50%;
+    margin-top: 3%;
+}
+.Product button{
+    width: 20%;
+}
+form{
+    display: grid
+}
+form input  {
+    width: 30%
+}
+form button {
+    width: 20%;
+    margin-top: 3%;
+}

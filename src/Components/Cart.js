@@ -1,11 +1,11 @@
-const Cart = ({ subTotal, tax, total, cartList, formatPrice }) => {  
+const Cart = ({ subTotal, tax, total, cartList, formatPrice }) => {
   return (
     <div>
       <h2>Cart</h2>
       <ul>
-        {cartList.map((product) => {
+        {cartList.map((product, i) => {
           return (
-            <li key={product.id}>
+            <li key={product.id + i}>
               {product.name}: {formatPrice(product.price)}
             </li>
           );

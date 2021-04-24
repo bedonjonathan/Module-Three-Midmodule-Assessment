@@ -14,6 +14,7 @@ class App extends React.Component {
     this.setState((prevState) => ({
       cartList: [product, ...prevState.cartList], subTotal: prevState.subTotal + product.price
     }));
+
     this.setState((prevState) => ({
       tax: prevState.subTotal * 0.05,
     }));
@@ -22,6 +23,9 @@ class App extends React.Component {
     }))
   };
   render() {
+    // let subTotal = 0
+    // let tax = 0
+    // let total = 0
     const { subTotal, tax, total, cartList } = this.state;
     return (
       <div className="App">
